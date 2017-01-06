@@ -1,0 +1,9 @@
+
+
+<h1 class="ui dividing header">My Media Server</h1>
+
+ <ul>
+   <%= for file <- @files do %>
+  <li><%= link file, to: page_path(@conn, :show, Map.get(file, :filename )) %></li> -->
+  <% end %>
+</ul>
